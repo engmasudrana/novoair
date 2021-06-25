@@ -1,7 +1,7 @@
-import React, {useContext} from 'react';
-import {Container, Navbar, Nav, Button} from "react-bootstrap";
-import {Link} from "react-router-dom";
-import {userContext} from "../../App";
+import React, { useContext } from 'react';
+import { Container, Navbar, Nav, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { userContext } from "../../App";
 import './Header.css'
 
 const Header = () => {
@@ -19,8 +19,8 @@ const Header = () => {
                     </Nav>
                     <Nav.Link href="#link" className="text-secondary"> {loggedInUser.name || loggedInUser.displayName}</Nav.Link>
                     {
-                        !loggedInUser.displayName  ? (  <Link to="/login"><Button variant="success">Login</Button></Link>)
-                            : (  <Button onClick={() => setLoggedInUser({})} variant="danger">SignOut</Button>)
+                        !loggedInUser.displayName ? (<Link to="/login"><Button variant="success">Login</Button></Link>)
+                            : (<Button onClick={() => setLoggedInUser({})} variant="danger">SignOut</Button>)
                     }
                 </Navbar.Collapse>
             </Navbar>

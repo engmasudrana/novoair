@@ -1,12 +1,12 @@
-import React, {useEffect, useState} from 'react';
-import {Container, Row} from "react-bootstrap";
+import React, { useEffect, useState } from 'react';
+import { Container, Row } from "react-bootstrap";
 import Card from "../Card/Card";
-import './Home.css';
 import Chittagong from "../../images/Chittagong.png";
 import India from "../../images/india.png";
 import USA from "../../images/usa.png";
+import './Home.css';
 
-const fakeData =[
+const fakeData = [
     {
         "image": Chittagong,
         "title": "Chittagong",
@@ -24,13 +24,12 @@ const fakeData =[
     }
 ]
 
-
 const Home = () => {
     const [cards, setCards] = useState([]);
 
-    useEffect(() =>{
+    useEffect(() => {
         setCards(fakeData)
-    },[])
+    }, [])
 
     return (
         <Container className="text-center">

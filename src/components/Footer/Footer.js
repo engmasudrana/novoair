@@ -1,8 +1,8 @@
-import React, {Component, Fragment} from 'react';
-import {Col, Container,Row} from "react-bootstrap";
+import React, { Component, Fragment } from 'react';
+import { Col, Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faFacebook,faYoutube,faGooglePlus,faInstagram, faCcVisa, faCcMastercard, faCcStripe, faCcPaypal, faCcAmex} from "@fortawesome/free-brands-svg-icons";
-import {Link} from "react-router-dom";
+import { faFacebook, faYoutube, faGooglePlus, faInstagram, faCcVisa, faCcMastercard, faCcStripe, faCcPaypal, faCcAmex } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 import headPhone from '../../images/headphones.svg'
 import './Footer.css'
 
@@ -15,15 +15,15 @@ class Footer extends Component {
                         <Row>
                             <Col lg={4} md={6} sm={12}>
                                 <h3 className="logo mt-5">Novoair</h3>
-                                <small className="footerDes">Got Questions ? Call us 09 AM - 06 PM !</small> <br/>
-                                <img className="headphone" src={headPhone} alt=""/>
+                                <small className="footerDes">Got Questions ? Call us 09 AM - 06 PM !</small> <br />
+                                <img className="headphone" src={headPhone} alt="" />
                                 <span className=""> +88 01558911491</span>
-                                <br/> <br/>
+                                <br /> <br />
                                 <div className="footer-icon">
-                                    <a href="#"><FontAwesomeIcon className="socialIcon" icon={faFacebook}/></a>
-                                    <a href="#"><FontAwesomeIcon className="socialIcon" icon={faYoutube}/></a>
-                                    <a href="#"><FontAwesomeIcon className="socialIcon" icon={faGooglePlus}/></a>
-                                    <a href="#"><FontAwesomeIcon className="socialIcon" icon={faInstagram}/></a>
+                                    <a href="#"><FontAwesomeIcon className="socialIcon" icon={faFacebook} /></a>
+                                    <a href="#"><FontAwesomeIcon className="socialIcon" icon={faYoutube} /></a>
+                                    <a href="#"><FontAwesomeIcon className="socialIcon" icon={faGooglePlus} /></a>
+                                    <a href="#"><FontAwesomeIcon className="socialIcon" icon={faInstagram} /></a>
                                 </div>
                             </Col>
 
@@ -65,17 +65,18 @@ class Footer extends Component {
 
                     <Container className="footer-border mt-3 py-3">
                         <div className="container">
-                            <span className="copyright-info">© 2021 Novoair. All Rights Reserved.</span> <br/>
+                            <span className="copyright-info">© 2021 Novoair. All Rights Reserved.</span> <br />
                             <span className="designer-info">Design & Develop by:</span>
                             <a className="design-by" href="http://mranainfo.com/" target="_blank"> Masud Rana</a>
-                            <div className="payment-info">
 
-                                <FontAwesomeIcon className="payment-icon" icon={faCcMastercard}/>
-                                <FontAwesomeIcon className="payment-icon" icon={faCcVisa}/>
-                                <FontAwesomeIcon className="payment-icon" icon={faCcStripe}/>
-                                <FontAwesomeIcon className="payment-icon" icon={faCcPaypal}/>
-                                <FontAwesomeIcon className="payment-icon" icon={faCcAmex}/>
+                            <div className="payment-info">
+                                <FontAwesomeIcon className="payment-icon" icon={faCcMastercard} />
+                                <FontAwesomeIcon className="payment-icon" icon={faCcVisa} />
+                                <FontAwesomeIcon className="payment-icon" icon={faCcStripe} />
+                                <FontAwesomeIcon className="payment-icon" icon={faCcPaypal} />
+                                <FontAwesomeIcon className="payment-icon" icon={faCcAmex} />
                             </div>
+
                         </div>
                     </Container>
                 </Container>

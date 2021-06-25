@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
-import {Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
-const CardForm = ({handlePayment}) => {
+const CardForm = ({ handlePayment }) => {
     const stripe = useStripe();
     const elements = useElements();
 
@@ -42,10 +42,10 @@ const CardForm = ({handlePayment}) => {
                 </Button>
             </form>
             {
-                paymentError && <p style={{color: 'red'}}>{paymentError}</p>
+                paymentError && <p style={{ color: 'red' }}>{paymentError}</p>
             }
             {
-                paymentSuccess && <p className="mt-2" style={{color: 'green'}}>your payment was successfully</p>
+                paymentSuccess && <p className="mt-2" style={{ color: 'green' }}>your payment was successfully</p>
             }
         </div>
     );
