@@ -7,7 +7,7 @@ import { Col, Container, Row, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import loginImg from '../../images/banner1.svg';
-import {userContext} from "../../App";
+import { userContext } from "../../App";
 
 if (firebase.apps.length === 0) {
     firebase.initializeApp(firebaseConfig);
@@ -34,7 +34,7 @@ function Login() {
         var provider = new firebase.auth.GoogleAuthProvider();
         firebase.auth().signInWithPopup(provider)
             .then((result) => {
-                const { displayName, email, photoURL  } = result.user;
+                const { displayName, email, photoURL } = result.user;
                 const isSignIn = { name: displayName, photo: photoURL, email: email, };
                 setLoggedInUser(isSignIn);
                 history.replace(from);
@@ -117,7 +117,7 @@ function Login() {
     }
 
     return (
-        <Container  className='p-4 mt-5 text-center'>
+        <Container className='p-4 mt-5 text-center'>
             <Row>
                 <Col lg={4} md={6} sm={12} className="">
                     <form onSubmit={handleSubmit} className='p-3'>
@@ -155,7 +155,7 @@ function Login() {
                                 style={{ cursor: 'pointer' }}
                                 onClick={() => setNewUser(!newUser)}
                             >
-                            {newUser ? 'Login' : 'Create an account'}
+                                {newUser ? 'Login' : 'Create an account'}
                             </span>{' '}
                         </h6>
                         <hr />
@@ -164,7 +164,7 @@ function Login() {
                 </Col>
 
                 <Col lg={8} md={8} sm={12}>
-                    <img className="w-100" src={loginImg} alt=""/>
+                    <img className="w-100" src={loginImg} alt="" />
                 </Col>
             </Row>
         </Container>
