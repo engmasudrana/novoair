@@ -1,0 +1,12 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.header-bg{
+    background-color: #fff;
+}
+.logo{
+    color: #285 !important;
+    font-weight: 700;
+    font-size: 24px;
+}
+

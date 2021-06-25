@@ -1,0 +1,71 @@
+.footerBg{
+    background-color: #f9f9f9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 7rem;
+}
+.footerTitle{
+    font-size: 14px;
+    color: #484848;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+.footerDes{
+    line-height: 20px;
+    font-size: 13px;
+    color: #7F8382;
+    transition: all 0.5s ease;
+}
+.footerDes:hover{
+    color: #228855;
+}
+a:hover{
+    text-decoration: none;
+}
+.headphone{
+    width: 50px;
+}
+.contact-icon{
+    font-size: 36px;
+    font-weight: 500;
+    color: #813afe;
+}
+.payment-info{
+    margin-top: -.8rem;
+    float: right;
+}
+.payment-icon{
+    font-size: 24px;
+    color: #7F8382;
+    margin: 0 8px;
+}
+.footer-icon{
+    margin-left: -.5rem;
+}
+.socialIcon{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 8px;
+    color: #474C42;
+}
+.socialIcon:hover{
+    color: #813afe;
+}
+/*footer end*/
+.footer-border{
+    border-top: 1px solid #E0E4E7;
+}
+.copyright-info{
+    font-size: 13px;
+    color: gray;
+}
+.designer-info{
+    font-size: 13px;
+    color: gray;
+}
+.design-by{
+    color: #3a4256;
+    font-weight: 500;
+    font-size: 13px;
+}

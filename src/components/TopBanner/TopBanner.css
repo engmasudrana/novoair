@@ -1,0 +1,12 @@
+.top-bg{
+    background-image: url("https://cdn.pixabay.com/photo/2020/05/02/16/26/sunset-5122116__340.jpg");
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+}
+
+.top-title{
+    font-size: 55px;
+    color: #333333;
+    font-weight: 600;
+}
